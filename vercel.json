@@ -21,6 +21,18 @@
       ]
     }
   ],
+  "redirects": [
+    {
+      "source": "/uber",
+      "destination": "https://www.ubereats.com/ec/store/roccia-heladeria-quito/ykuLU1U_WnS1XdmfUux0dw",
+      "permanent": false
+    },
+    {
+      "source": "/rappi",
+      "destination": "https://www.rappi.com.ec/restaurantes/46500-roccia",
+      "permanent": false
+    }
+  ],
   "cleanUrls": true,
   "trailingSlash": false
 }
