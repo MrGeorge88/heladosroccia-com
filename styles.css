@@ -629,3 +629,84 @@ img { display: block; max-width: 100%; }
   .footer-cols { grid-template-columns: 1fr 1fr; gap: 32px 24px; }
   .footer-brand-script { font-size: 64px; }
 }
+
+/* =========================================================
+   POR QUÉ ROCCIA · variante 5 columnas
+   ========================================================= */
+.why-grid-5 { grid-template-columns: repeat(5, 1fr); gap: 28px; }
+@media (max-width: 1180px) { .why-grid-5 { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 900px)  { .why-grid-5 { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 600px)  { .why-grid-5 { grid-template-columns: 1fr; } }
+
+/* =========================================================
+   PARA LLEVAR · helados para llevar (500ml / 1L)
+   ========================================================= */
+.takeaway { padding: 112px 0; background: var(--crema); }
+.takeaway-head { text-align: center; max-width: 760px; margin: 0 auto 56px; }
+.takeaway-title {
+  font-family: var(--display); font-weight: 500;
+  font-size: clamp(36px, 4.4vw, 60px);
+  letter-spacing: -0.02em; line-height: 1;
+  margin: 16px 0 18px;
+}
+.takeaway-title .script { font-family: var(--script); font-weight: 400; font-size: 1.05em; }
+.takeaway-lead {
+  font-family: var(--serif); font-size: 17px; line-height: 1.55;
+  color: var(--cafe-calido); margin: 0;
+}
+.takeaway-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 24px;
+  max-width: 880px; margin: 0 auto;
+}
+.takeaway-card {
+  background: #fff; border: 1px solid var(--rule);
+  border-radius: 24px; padding: 36px 32px;
+  display: flex; flex-direction: column; gap: 12px;
+  transition: transform .25s ease, border-color .25s ease;
+}
+.takeaway-card:hover { transform: translateY(-2px); border-color: var(--rule-strong); }
+.takeaway-size-badge {
+  align-self: flex-start;
+  display: inline-block;
+  background: var(--cafe); color: var(--crema);
+  font-family: var(--serif); font-weight: 600;
+  font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase;
+  padding: 6px 14px; border-radius: 999px;
+  margin-bottom: 4px;
+}
+.takeaway-cardtitle {
+  font-family: var(--display); font-weight: 500;
+  font-size: 28px; letter-spacing: -0.01em; line-height: 1.1;
+  margin: 0;
+}
+.takeaway-cardbody {
+  font-family: var(--serif); font-size: 15px; line-height: 1.55;
+  color: var(--cafe-calido); margin: 0; flex-grow: 1;
+}
+.takeaway-price {
+  font-family: var(--display); font-weight: 600;
+  font-size: 32px; color: var(--cafe);
+  letter-spacing: -0.01em;
+  margin-top: 8px;
+}
+.takeaway-benefits {
+  list-style: none; padding: 0;
+  margin: 40px auto 32px; max-width: 880px;
+  display: flex; flex-wrap: wrap; justify-content: center;
+  gap: 24px 36px;
+  font-family: var(--serif); font-size: 14px; font-weight: 500;
+  color: var(--cafe-calido);
+}
+.takeaway-benefits li { display: inline-flex; align-items: center; gap: 8px; }
+.takeaway-benefits svg { color: var(--cafe); }
+.takeaway-ctas {
+  display: flex; justify-content: center; flex-wrap: wrap;
+  gap: 12px; margin-top: 8px;
+}
+@media (max-width: 720px) {
+  .takeaway { padding: 72px 0; }
+  .takeaway-grid { grid-template-columns: 1fr; gap: 16px; }
+  .takeaway-card { padding: 28px 24px; }
+  .takeaway-cardtitle { font-size: 24px; }
+  .takeaway-price { font-size: 28px; }
+}
